@@ -1,9 +1,10 @@
+
 import { Text, View } from "react-native";
 
-export default function CreateAccount () {
+export default function SignIn () {
     return (
         <View>
-            <Text>Create account</Text>
+            <Text>Sigin to your account</Text>
         </View>
     )
 }

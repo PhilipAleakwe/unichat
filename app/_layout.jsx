@@ -5,10 +5,10 @@ import { AuthContext, AuthProvider } from "../confiq/auth-context";
 
 export default function RootLayout() {
   const { currentUser } = useContext(AuthContext);
-  const [session,setSession] = useState(false);
+  const [session,setSession] = useState(true);
 
   useEffect(() => {
-    if (currentUser !== undefined) {
+    if (currentUser !== true) {
       setSession(true);
     } else {
       setSession(false)
